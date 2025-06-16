@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom"; // Import useNavigate from React Router
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate from React Router
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -149,9 +149,9 @@ const Register = () => {
         </div>
       </form>
       <p className="mt-4 text-sm">
-        <a href="#" className="text-blue-400">
+        <Link to="/login" className="text-blue-400">
           Already have an account? Sign in
-        </a>
+        </Link>
       </p>
     </div>
   );
